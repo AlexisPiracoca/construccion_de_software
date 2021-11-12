@@ -1,7 +1,7 @@
 # Author: Jhon Alexis Piracoca Arcos
 
 persona = {
-    "Nombres":"Alexis",
+    "Nombres":"Jhon",
     "Apellidos":"Piracoca",
     "Telefono":"3142258974",
 }
