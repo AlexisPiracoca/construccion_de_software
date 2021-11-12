@@ -1,0 +1,33 @@
+pip install virtualenv
+python -m venv my_env
+my_env\Scripts\activate.bat
+pip freeze
+django-admin startproject nombredelproyecto .
+python manage.py runserver (para corre app django)
+code . (para abrir en visual code)
+python manage.py startapp nombredelproyecto (para agregar al proyecto)
+python manage.py makemigrations
+python manage.py migrate
+
+pip install psycopg2
+pip install mysqlclient
+
+python manage.py shell
+
+
+DATABASES={
+    'default':{
+    'ENGINE':'django.db.backends.postgresql_psycopg2',
+    'NAME':'nombre de la base de datos',
+    'USER':'postgres',
+    'PASSWORD':'contraseña de su base de datos',
+    'HOST':'localhost',
+    'PORT':'5432',
+    }
+}
+
+python manage.py createsuperuser /para crear un superusuario
+
+
+pip install psycopg2-binary-2.8.6
+

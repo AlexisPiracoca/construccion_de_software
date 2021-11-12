@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Personajes</title>  
+<head>
+<body>
+
+<h1 align="center">{{ titulo }}</h1>
+<table border = "1" cellpadding = "10" cellspacing = "0">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>NOMBRE</th>
+        <th>DESCRIPCION</th>
+        <th>PODERES</th>
+        <th>IMAGENES</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    {% for personaje in personajes %}
+    <tr>
+        <td><h3>{{ personaje.id }}</h3></td>
+        <td><h3>{{ personaje.nombre }}</h3></td>
+        <td><h3>{{ personaje.descripcion }}</h3></td>
+        <td><h3>{{ personaje.poderes }}</h3></td>
+        <td><img src="{{ personaje.ruta_imagen }}" width="90" height="90"/></td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,49 @@
+1.select ch.name, ci.name 
+from city ci 
+inner join characters ch on ci.id = ch.cit_id;
+
+2.select cit_id,
+count(cit_id) 
+from characters GROUP BY cit_id
+order by cit_id;
+
+3.select ch.name, ci.name, po.name, pc.level 
+from city ci 
+inner join characters ch on ci.id = ch.cit_id
+inner join powers_character pc on ch.id = pc.cha_id
+inner join powers po on po.id = pow_id;
+
+4.select cit_id,
+count(cit_id) 
+from characters GROUP BY cit_id
+order by cit_id;
+
+5.select ch.name 
+from characters ch 
+where ch.name like '%u%';
+
+6.select ch.name, po.name
+from characters ch
+inner join powers_character pc on ch.id = pc.cha_id
+inner join powers po on po.id = pow_id 
+where po.name = 'Volar' and po.name = 'Super fuerza' and po.name = 'Telequinesis';
+
+7.select ch.name, po.name
+from characters ch
+inner join powers_character pc on ch.id = pc.cha_id
+inner join powers po on po.id = pow_id 
+where po.name = 'Volar' or po.name = 'Super fuerza';
+
+8.select id, name, año_de_nacimiento 
+from characters 
+where año_de_nacimiento between '2010' and '2020';
+
+9.select id, name, año_de_nacimiento 
+from characters 
+where año_de_nacimiento < '2011';
+
+10.select c.name, p.name
+from powers_character pc
+inner join characters c on pc.cha_id = c.id
+inner join powers p on p.id = pc.pow_id
+where p.name not in ('Volar');

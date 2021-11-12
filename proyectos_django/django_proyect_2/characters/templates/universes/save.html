@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/global-style.css' %}">
+
+</head>
+<body>
+
+<header>
+    <form id="form">
+        <h1>Com<span class="red">ics</span></h1>
+        <label for="search"></label><input type="text" id="search" class="search" placeholder="Search"/>
+    </form>
+</header>
+
+<main>
+
+    <div class="container-items">
+         <form method="post" action="{% url 'characters:save_characters' %}"  enctype="multipart/form-data" >
+          {% csrf_token %}
+            <div class="form-group">
+              <label >Name</label>
+              <input type="text" class="form-control" name="name">
+            </div>
+            <div class="form-group ">
+              <label >Description</label>
+                <textarea name="description" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-group">
+               <label >Path</label>
+                <input type="file" name="file">
+           </div>
+
+          <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+
+    </div>
+
+</main>
+
+<footer class="footer">
+    <div class="footer__copy">
+        <div class="footer__content">
+            <div class="copy__text">
+                © 2021 Jhon Alexis
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+Tipo,    	Vida,  Ataque,	Defensa ,	Alcance
+Caballero,	7,	    10,	    7,		    5
+Guerrero,	4,	    9,	    6,		    4
+Arquero,	8,	    10,	    1,		    8
+monje,      15,     15,     15,         15

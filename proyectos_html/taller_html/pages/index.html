@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taller</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Stick+No+Bills:wght@200&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1 style = "font-family: 'Stick No Bills', sans-serif;">0 to Hero HTML, CSS and JavaScript</h1>
+    <hr>
+    <h4 style = "font-family: 'Gemunu Libre', sans-serif;">0 to Hero Django</h4>
+    <hr>
+    <p style = "font-family: 'Bonheur Royale', cursive; font-family: 'Stick No Bills', sans-serif;"> I remember when I first started learning front-end development. 
+        I encountered so many <a href="https://www.freecodecamp.org/news/from-zero-to-front-end-hero-part-1-7d4f7f0bff02/">articles,</a> and was so overwhelmed by how much material 
+        I would need to learn that I didn’t even know where to start. </p> 
+    <hr> 
+    <img src="../assets/img/photo/photo 1.jpg" alt="" width="30%" height="30%">
+    <img src="../assets/img/photo/photo 2.jpg" alt="" width="30%" height="30%">
+    <img src="../assets/img/photo/photo 3.jpg" alt="" width="30%" height="30%">
+    <hr>
+    <div align = "center">
+    <table border = "1" cellpadding = "10" cellspacing = "0">
+        <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Descuento</th>
+          <th>Valor</th>
+        </tr>
+        <tr>
+          <td>Lavadora</td>
+          <td rowspan = "2">30%</td>
+          <td>$1.700.000</td>
+        </tr>
+        <tr>
+          <td>Secadora</td>
+          <td>$1.900.000</td>
+        </tr>
+        <tr>
+          <td>Computador</td>
+          <td>0%</td>
+          <td>$2.400.000</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Total</td>
+          <td>$4.920.000</td>
+        </tr>
+      </table>
+    <hr>
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRX7Ry7n9m1tkCh6fj6Qtbu2xY1JkS1BLE_rZto4oyJ0Gqy2j-FjaMFMxK8RrW41wB7p3zBilHvyWKK/embed?start=true&loop=true&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <hr>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Q2imkhmhOFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+        <audio controls>
+            <source src="../assets/songs/audio.mp3" type="audio/mp3">
+        </audio>
+    <hr>
+    <img src="../assets/img/punto 9 (1).PNG" alt="" width="30%" height="30%">
+    <img src="../assets/img/punto 9 (2).PNG" alt="" width="30%" height="30%">
+</div>
+    <hr>
+    <form enctype="multipart/form-data" action="/estudiantes" method="post">
+        <p>Id: <input type="text" name="id"></p>
+        <p>Nombres: <input type="text" name="nombres" size="40"></p>
+        <p>Apellidos: <input type="text" name="apellidos" size="40"></p>
+        <p>Nacionalidad: <input type="text" name="nacionalidad" size="20"></p>
+        <p>Edad: <input type="text" name="edad" size="4"></p>
+        <p>Foto: <input type="file" name="foto"></p>
+        <p>Sexo:
+            <input type="radio" name="hm" value="h"> Hombre
+            <input type="radio" name="hm" value="m"> Mujer
+          </p>
+        <input type="submit" value="enviar">
+     </form>
+</body>
+</html>

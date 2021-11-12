@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Permanent+Marker&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    background-image: url(https://images.vexels.com/media/users/3/255469/raw/5d32670a4a9ed361eae2ac4121be7e92-dise-o-de-patr-n-de-comida-dulce-de-cono-de-helado.jpg);
+}
+
+header {
+    width: 100%;
+}
+
+.header .main {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.navbar {
+    margin-top: 20px;
+}
+  
+.navbar .brand {
+    display: flex;
+    margin: 15px 70px;
+    color: #000000;
+}
+  
+.navbar .brand .fa-ice-cream {
+    font-size: 3.5em;
+}
+
+.navbar .brand h3 {
+    font-size: 2.5em;
+    margin: 4px 4px;
+}
+
+.menu .fa-play-circle{
+    font-size: 1.5em;
+}
+
+.menu .fa-product-hunt{
+    font-size: 1.5em;
+}
+
+.menu .fa-blogger-b{
+    font-size: 1.5em;
+}
+
+.menu .fa-id-badge{
+    font-size: 1.5em;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: -25px 0px;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-right: 60px;
+}
+
+.menu ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.menu ul li a:hover {
+    color: #000000;
+}
+
+.navbar .toggle-menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+}
+
+.navbar .toggle-menu i {
+    font-size: 2em;
+    cursor: pointer;
+    color: #000000;
+    display: none;
+}
+
+.container-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+
+.container-info h1 {
+    font-size: 7em;
+    font-family: "Permanent Market", cursive;
+    margin: 60px 60px;
+    animation: left-move 1s ease-in;
+}
+
+.container-info .btn {
+    font-size: 1.5em;
+    width: 200px;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: black;
+    border: none;
+    color:white;
+    animation: right-move 1s ease-in;
+    margin: 50px 70px;
+    cursor: pointer;
+}
+
+.container-info .img-content img {
+    max-width: 130%;
+    margin: 50px -110px;
+    animation: up-move 1s ease-in;
+}
+  
+.container-info .social-content li {
+    list-style: none;
+    margin: 20px;
+    animation: left-move 1s ease-in;
+}
+  
+.container-info .social-content i {
+    font-size: 2em;
+    color: #000000;
+}
+  
+.container-info .social-content i:hover {
+    transform: scale(1.5);
+}
+  
+.header .wave {
+    margin-top: -100px;
+}
+  
+.our-products {
+    background-color: #fff;
+    height: 200vh;
+}
+
+.products h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3.5em;
+  }
+  
+.blog h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3.5em;
+  }  
+ 
+  .blog p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em;
+  }   
+  
+  .products .divider {
+    margin-bottom: 5em;
+  }
+  
+  .products .container-products {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .content-products-info,
+  .content-price,
+  .btn-content {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .content-product-info {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .content-product-info h4 {
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .products .content-price .last-price {
+    text-decoration: line-through;
+    font-weight: lighter;
+    margin-right: 20px;
+  }
+  
+  .products .content-price .new-price {
+    background-color: #ca4172;
+    padding: 5px 10px;
+    color: #fff;
+  }
+
+  .products .btn-product {
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    color: #000;
+    cursor: pointer;
+  }
+
+  .contact {
+    margin-top: 5em;
+    background-color: #ca4172;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+  }
+  
+  .contact h2 {
+    color: #fff;
+    font-size: 3em;
+    font-weight: 300;
+  }
+
+  .btn-contact {
+  background-color: #ececec;
+  padding: 8px 40px;
+  font-size: 1.2em;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+
+  
+  

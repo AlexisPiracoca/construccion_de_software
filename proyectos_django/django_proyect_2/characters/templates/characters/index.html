@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/global-style.css' %}">
+
+</head>
+<body>
+
+<header>
+    <form id="form">
+        <h1>Com<span class="red">ics</span></h1>
+        <label for="search"></label><input type="text" id="search" class="search" placeholder="Search"/>
+    </form>
+</header>
+
+<main>
+    <div class="container-universes">
+        <button class="button">Marvel</button>
+        <button class="button active">DC</button>
+    </div>
+
+    <div class="container-items">
+        {% for item in list %}
+        <div class="item">
+            <a href={% url 'characters:detail' id=item.id %}>
+                <img src="/media/{{item.path}}"  alt={{item.name}}>
+            </a>
+            <div class="item-info">
+                <h3>{{ item.name }}</h3>
+                <span class="item-info">5.3</span>
+            </div>
+            <div class="overview">
+                <h3>Descripción</h3>
+                <p>{{ item.description }}</p>
+            </div>
+        </div>
+    {% endfor %}
+
+
+
+    </div>
+
+</main>
+
+<footer class="footer">
+    <div class="footer__copy">
+        <div class="footer__content">
+            <div class="copy__text">
+                © 2021 Jhon Alexis
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

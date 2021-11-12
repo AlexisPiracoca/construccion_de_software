@@ -1,0 +1,197 @@
+/*Barra de Navegación*/
+.logo{
+    display: inline-flex;
+    width: 60px;
+    height: 60px;
+    margin-left: 12px;
+}
+
+.menu {
+    display: flex;
+    margin-top: -25px;
+    height: 80px;
+    justify-content: initial;
+    align-items: center;
+    flex-wrap: wrap ;
+    cursor: pointer;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.menu ul{
+    margin-left: 20px;
+}
+
+.menu ul a {
+    display: inline-block;
+    color:#666;
+    text-decoration:none;
+    font-size: 1em;
+    margin-left: 20px;
+}
+
+.menu ul a:hover{
+    color:#000000;
+}
+
+.menu li{
+    display: inline-block;
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    text-decoration:none;
+    margin-left: 20px;
+}
+
+.menu li:hover{
+    color:#000000;
+}
+
+.menu ul li {
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+}
+
+.menu ul li:hover {
+    background:white;
+}
+
+.menu .right{
+    display: inline-flex;
+    justify-content: end;
+    margin-left: 520px;
+}
+
+/*Submenu*/
+.menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background:#eee;
+    padding: 0;
+}
+      
+.menu ul ul li{
+    float:none;
+    width:190px;
+}
+    
+.menu ul ul a {
+    line-height:120%;
+    padding:10px 15px;
+   }
+      
+.menu ul li:hover > ul {
+    display: block;
+}
+
+/*Submenu del submenu*/
+.menu ul ul li ul{
+    display: none;
+    position: absolute;
+    top: 0px;
+    background:#eee;
+    padding: 0;
+    right: -150px;
+}
+
+.menu ul ul li ul{
+    float:none;
+    width:190px;
+}
+
+
+/*Banner*/
+/*
+.banner{
+    width: 101.4%;
+    height: 580px;
+    justify-content: center;
+    margin-top: -20px;
+    position: none;
+    margin-left: -10px;
+    display: flex;   
+    background-color: black;
+}
+*/
+
+.banner{
+    width: 101.4%;
+	height: 580px;
+	animation: banner 10s infinite linear alternate;
+	background-size: cover;
+	position: bottom;
+	display: flex;
+    margin-left: -10px;
+    margin-top: -20px;
+}
+
+@keyframes banner{
+	0%, 20%{
+		background-image: url(https://cdn.wallpapersafari.com/55/46/KGhbMI.jpg);
+	}
+	25%, 45%{
+		background-image: url(https://gamingbolt.com/wp-content/uploads/2019/03/nvidia.jpg);
+	}
+	50%, 70%{
+		background-image: url(https://wallpaperaccess.com/full/4116647.jpg);
+	}
+    75%, 100%{
+		background-image: url(https://cdn.wallpapersafari.com/68/27/v8dNku.png);
+	}
+}
+
+/*Gaming Info*/
+.titulo{
+    text-align:center;
+    font-size: 2.5em;
+    color:#88B900;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: normal;
+    margin-top: 55px;
+}
+
+.gaming{
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.gaming .tarjetas{
+    display: inline-block;
+    width: 290px;
+    height: 290px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin-left: 23px;
+   
+    text-align: center;
+}
+
+.gaming .tarjetas img{
+    width: 290px;
+    height: 164px;
+}
+
+.gaming .tarjetas h4{
+    font: 1em;
+    color:#88B900;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: normal;
+}
+
+.gaming .tarjetas p{
+    font-size: 1em;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: normal;
+}
+
+.gaming .tarjetas:hover{
+    transform: translateY(0px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+

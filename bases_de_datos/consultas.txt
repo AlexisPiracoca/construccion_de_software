@@ -1,0 +1,42 @@
+select * 
+from hr.regions,hr.countries;
+where hr.regions.region_id = hr.countries.region_id;
+
+select city, country_name, department_name
+from hr.locations lo, hr.countries co, hr.departments de
+where lo.country_id = co.country_id
+and de.location_id = lo.location_id;
+
+/*
+como usuario administrador quiero conocer el trabajo que realiza 
+cada uno de los funcionarios de la empresa y su salario 
+*/
+select first_name, last_name, job_title, salary
+from hr.employees em, hr.jobs jo
+where em.job_id = jo.job_id;
+
+/*
+2. como jefe de la empresa quiero conocer 
+   los trabajos que ha desarrollado Neena Kochhar en la empresa
+*/
+select first_name, last_name, job_title, start_date, end_date
+from hr.employees em, hr.jobs jo, hr.job_history jh
+where em.job_id = jo.job_id
+and jo.job_id = jh.job_id
+and first_name like 'Neena';
+
+/*
+3. como adminitrador del sistema quiero conocer 
+la informacion de los trabajadores  de    IT, IT Support e IT Helpdesk
+el informe debe contener la informacion 
+de ciudad, pais, departamento en el que trabaja, correo y numero telefonico 
+con el fin de invitarlos a una fiesta   
+*/
+select first_name, email, phone_number, department_name, city, country_name
+from hr.countries co, hr.locations lo, hr.departments de, hr.employees em 
+where co.country_id = lo.country_id
+and lo.location_id = de.location_id
+and de.department_id = em.department_id
+and department_name like 'IT%'
+
+
